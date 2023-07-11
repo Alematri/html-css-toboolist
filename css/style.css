@@ -9,7 +9,13 @@ body{
   background-color: gray;
 }
 
-/* HEADER */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+/* !!! HEADER !!! */
 .container-header{
   background-color: rgb(255, 255, 255);
   width: 100%;
@@ -30,7 +36,7 @@ body{
   font-weight: 800;
 }
 
-/* MAIN */
+/* !!! MAIN !!! */
 .container-main{
   background-color: white;
   width: 70%;
@@ -38,6 +44,7 @@ body{
   border-radius: 10px;
 }
 
+  /* buttons */
 .container-buttons{
   border-bottom: solid 2px rgba(228, 228, 228, 0.74);
   padding: 10px 40px;
@@ -58,4 +65,66 @@ body{
 #addsection{
   background-color: white;
   color: lightgray;
+}
+
+   /* task list */
+
+.conteiner-task{
+  padding: 30px 40px;
+}
+
+li{
+  display: inline;
+}
+
+.list-title{
+  font-weight: 700;  
+  font-size: 2rem;
+}
+
+ul li{
+  font-size: 1.5rem;
+  margin: 10px 0px;
+}
+
+ul span{
+  font-size: 0.5rem;
+  border-radius: 10px;
+  display: inline-block;
+  padding: 5px 8px;
+  color: white;
+  font-size: 10px; 
+}
+
+.check{
+  color: green;
+  font-size: 1.5rem;
+  border: solid 1px green;
+  border-radius: 50%;
+}
+
+.cross{
+  color: red;
+  font-size: 1.5rem;
+  border: solid 1px red;
+  border-radius: 50%;
+}
+
+.editorial{
+  background-color: skyblue;
+}
+.q1goals{
+  background-color: purple;
+}
+.recruting{
+  background-color: green;
+}
+.mobile{
+  background-color: orange;
+}
+.website{
+  background-color: palevioletred;
+}
+.sales{
+  background-color: yellowgreen;
 }
