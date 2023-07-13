@@ -12,69 +12,82 @@
     <!-- Logo intestazione pagina -->
     <div class="container-header"> 
       <img src="img/logo.png" class="logo-header" alt="logo">
-      <h1>Toboolist</h1>
+      <span class="logo-text">Toboolist</span>
     </div>
   </header>
 
   <main>
-    <div class="container-main">
-
+    
+    <div class="container">
       <!-- Bottoni -->
-      <div class="container-buttons">
-        <button id="addtask">Add Task</button>
-        <button id="addsection">Add Section</button>
-      </div>
 
-      <!-- Lista delle task -->
-      <div class="conteiner-task">
+      <div class="top">
+        <button class="btn btn-filled">Add Task</button>
+        <button class="btn btn-empty">Add Section</button>
+      </div>
+    
+
+      <div class="tasks">
+        <!-- Tasks List -->
 
         <ul>
-          <li class="list-title">&#x25BC; New Task</li>
+
+          <li><h3>New Task</h3></li>
             <ul>
-              <span class="check">&#10003;</span>
-              <li>Quartely Newsletters</li>
-              <span class="editorial">Editorial</span>
+              <li>
+                <span class="circle checked"></span>
+                <span>Quartely Newsletters</span>
+                <span class="badge editorial">Editorial</span>
+              </li>
             </ul>
 
-          <li  class="list-title">&#x25BC; Today</li>
+          <li><h3>Today</h3></li>
             <ul>
-              <span class="check">&#10003;</span>
-              <li>Recruting blog post</li>
-              <span class="editorial">Editorial</span> <br>
-              
-              <span class="check">&#10003;</span>
-              <li>Mobile app Launch</li>
-              <span class="q1goals">Q1 Goals</span> <br>
-
-              <span class="cross">&#215;</span>
-              <li>Interview John H.</li>
-              <span class="recruting">Rectruting</span> <br>
-
-              <span class="check">&#10003;</span>
-              <li>Summit update to mobile storefronts</li>
-              <span class="mobile">Mobile</span>
+              <li>
+                <span class="circle checked"></span>
+                <span>Recruting blog post</span>
+                <span class="badge editorial">Editorial</span>
+              </li>
+              <li>
+                <span class="circle checked"></span>
+                <span>Mobile app Launch</span>
+                <span class="badge q1">Q1 Goals</span>
+              </li>
+              <li>
+                <span class="circle unchecked"></span>
+                <span>Interview John H.</span>
+                <span class="badge recruiting">Recruiting</span>
+              </li>
+              <li>
+                <span class="circle checked"></span>
+                <span>Summit update to mobile storefronts</span>
+                <span class="badge mobile">Mobile</span>
+              </li>
             </ul>
 
-          <li class="list-title">&#x25BC; Upcoming</li>
-            <ul>
-              <span class="cross">&#215;</span>
-              <li>Shedule meeting with Alex</li> <br>
-
-              <span class="check">&#10003;</span>
-              <li>Homepage refresh</li>
-              <span class="website">Website</span> <br>
-
-              <span class="check">&#10003;</span>
-              <li>Onboard new Sales team members</li>
-              <span class="sales">Sales</span> <br>
-
-              <span class="check">&#10003;</span>
-              <li>Review editorial calendar</li>
-              <span class="editorial">Editorial</span>
-            </ul>
+          <li><h3>Upcoming</h3></li>
+            <li>
+              <span class="circle unchecked"></span>
+             <span>Schedule meeting with Alex</span>
+            </li>
+            <li>
+              <span class="circle checked"></span>
+              <span>Homepage refresh</span>
+              <span class="badge website">Website</span>
+          </li>
+          <li>
+            <span class="circle checked"></span>
+            <span>Onboard new Sales team member</span>
+            <span class="badge sales">Sales</span>
+        </li>
+        <li>
+          <span class="circle checked"></span>
+          <span>Review editorial calendar</span>
+          <span class="badge editorial">Editorial</span>
+      </li>
 
         </ul>
-      
+
       </div>
 
     </div>

@@ -2,129 +2,142 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif
 }
 
 body{
-  background-color: gray;
+  background-color: rgb(204, 204, 204);
+  font-family: Arial, Helvetica, sans-serif
 }
 
-ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* !!! HEADER !!! */
-.container-header{
-  background-color: rgb(255, 255, 255);
-  width: 100%;
-  height: 100px;
-}
-
-.logo-header{
-  height: 70px;
-  margin-top: 15px;
-  margin-left: 15px;
-}
-
-.container-header h1{
-  vertical-align: top;
-  display: inline-block;
-  line-height: 100px;
-  font-size: 3.5rem;
-  font-weight: 800;
-}
-
-/* !!! MAIN !!! */
-.container-main{
+.container{
   background-color: white;
-  width: 70%;
-  margin: 3% auto;
-  border-radius: 10px;
-}
-
-  /* buttons */
-.container-buttons{
-  border-bottom: solid 2px rgba(228, 228, 228, 0.74);
-  padding: 10px 40px;
-}
-
-.container-buttons button{
-  border: solid 1px;
+  width: 95%;
+  max-width: 800px;
+  margin: 40px auto;
   border-radius: 5px;
-  padding: 10px;
-  cursor: pointer;
 }
 
-#addtask{
-  background-color: skyblue;
+/* BOTTONI */
+.btn{
+ border: none;
+ padding: 5px 10px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.btn.btn-filled{
+  background-color: #47ADF1;
   color: white;
+  border: 1px solid #47ADF1;
 }
 
-#addsection{
+.btn.btn-empty{
   background-color: white;
-  color: lightgray;
+  border: 1px solid lightgray;
 }
 
-   /* task list */
-
-.conteiner-task{
-  padding: 30px 40px;
-}
-
-li{
-  display: inline;
-}
-
-.list-title{
-  font-weight: 700;  
-  font-size: 2rem;
-}
-
-ul li{
-  font-size: 1.5rem;
-  margin: 10px 0px;
-}
-
-ul span{
-  font-size: 0.5rem;
-  border-radius: 10px;
+/* CIRCLE */
+.circle::before{
   display: inline-block;
-  padding: 5px 8px;
-  color: white;
-  font-size: 10px; 
+  width: 15px;
+  height: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  font-size: .8rem;
 }
 
-.check{
+li .circle.checked::before{
+  content: '\2713';
   color: green;
-  font-size: 1.5rem;
-  border: solid 1px green;
-  border-radius: 50%;
+  border-color: green;
 }
 
-.cross{
+li .circle.unchecked::before{
+  content: '\2715';
   color: red;
-  font-size: 1.5rem;
-  border: solid 1px red;
-  border-radius: 50%;
+  border-color: red;
 }
 
-.editorial{
-  background-color: skyblue;
+/* BADGE */
+.badge{
+  color: white;
+  border-radius: 10px;
+  font-size: .7rem;
+  padding: 5px 8px;
 }
-.q1goals{
-  background-color: purple;
+
+.badge.editorial{
+  background-color: #47ADF1;
 }
-.recruting{
-  background-color: green;
+
+.badge.mobile{
+  background-color: #f19947;
 }
-.mobile{
-  background-color: orange;
+
+.badge.q1{
+  background-color: #88199e;
 }
-.website{
-  background-color: palevioletred;
+
+.badge.recruiting{
+  background-color: #0e6b1a;
 }
-.sales{
-  background-color: yellowgreen;
+
+.badge.sales{
+  background-color: #39e616;
 }
+
+.badge.website{
+  background-color: #e074bc;
+}
+
+
+
+/* HEADER */
+header{
+  background-color: white;
+  height: 70px;
+  padding: 10px 20px;
+}
+
+header img{
+  height: 100%;
+  vertical-align: middle;
+}
+
+header .logo-text{
+  font-weight: 900;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+/* MAIN */
+.container .top{
+  padding: 20px 40px;
+  border-bottom: 1px solid gray;
+}
+
+.container .tasks{
+  padding: 40px;
+}
+
+.tasks ul{
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.tasks ul li{
+  margin-bottom: 15px;
+}
+
+.tasks ul h3{
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.tasks ul h3::before{
+  content: '\25BE';
+  padding-right: 10px;
+}
+
